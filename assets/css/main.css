@@ -1889,9 +1889,9 @@
 		-webkit-transition: border-color 0.2s ease;
 		-ms-transition: border-color 0.2s ease;
 		transition: border-color 0.2s ease;
-		background-color: transparent;
+		background-color: #91bca8;
 		border: solid 1px !important;
-		border-color: rgba(255, 255, 255, 0.15) !important;
+		border-color: rgba(255, 255, 255, 1) !important;
 		border-radius: 3em;
 		color: #ffffff !important;
 		cursor: pointer;
@@ -2060,7 +2060,7 @@
 	}
 
 		.features section {
-			padding: 3.5em 3em 1em 7em ;
+			padding: 2.5em 2em .5em 5em ;
 			width: 50%;
 			border-top: solid 1px #d0d0d0;
 			position: relative;
@@ -2088,8 +2088,8 @@
 				-ms-transform: scale(1);
 				transform: scale(1);
 				position: absolute;
-				left: 3em;
-				top: 3em;
+				left: 8em;
+				top: -1em;
 				opacity: 1;
 			}
 
@@ -2245,11 +2245,14 @@
 
 			.features {
 				display: block;
+				margin: 0 auto;
+				width: 70%;
 			}
 
 				.features section {
 					border-top-width: 1px !important;
 					border-left-width: 0 !important;
+					padding: 2.5em 2em .5em 2em ;
 					width: 100%;
 				}
 
@@ -2261,28 +2264,58 @@
 
 		@media screen and (max-width: 736px) {
 
+			.features {
+				width: 80%;
+			}
+
 			.features section {
-				padding: 2.5em 1.5em 0.1em 5.5em ;
+				padding: 2.5em 2em .5em 2em ;
 			}
 
 				.features section .icon {
-					left: 1.5em;
-					top: 2em;
+					/*left: 1.5em;*/
+					/*top: 2em;*/
+					position: absolute;
+				left: 8em;
+				top: -1em;
+				margin: auto;
 				}
 
 		}
 
 		@media screen and (max-width: 480px) {
 
+			.features {
+				width: 100%;
+			}
+			
 			.features section {
-				padding: 2em 1.5em 0.1em 1.5em ;
+				padding: 2.5em 2em .5em 2em ;
 			}
 
 				.features section .icon {
-					left: 0;
+					/*left: 1.5em;*/
+					/*top: 2em;*/
+					position: absolute;
+				left: 7.2em;
+				top: -1em;
+				margin: auto;
+				}
+
+/*			.features section {
+				padding: 2em 1em 1em 1em ;
+				width: 80%;
+
+			}
+
+				.features section .icon {
 					position: relative;
 					top: 0;
-				}
+					position: absolute;
+				left: 5em;
+				top: -1em;
+				margin: auto;
+				}*/
 
 		}
 
@@ -3084,12 +3117,16 @@
 				opacity: 1;
 			}
 
+		.spotlights > section:first-child {
+			background-color: rgba(0, 0, 0, 0.03);
+		}
+
 		.spotlights > section:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.05);
+			background-color: rgba(0, 0, 0, 0.06);
 		}
 
 		.spotlights > section:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.1);
+			background-color: rgba(0, 0, 0, 0.09);
 		}
 
 		/*.spotlights > section.inactive > .image:before, body.is-loading .spotlights > section > .image:before {
